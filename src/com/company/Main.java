@@ -1,19 +1,31 @@
 package com.company;
+import com.sun.deploy.util.StringUtils;
 
 import java.util.Scanner;
+
+
 
 class untitled3 {
 
     public static void main(String[] args) {
+
+
         Scanner scan = new Scanner(System.in);
-        System.out.println("========================================");
-
-            String s1 = scan.next();
-            System.out.printf("%-15s", s1);
-            int s2 = scan.nextInt();
-            System.out.printf("%03d\n",s2);
-
-
-        System.out.println("========================================");
+        String A = scan.next();
+        String B = scan.next();
+        int sum = A.length()+B.length();
+        System.out.println(sum);
+        if(A.length()<B.length())
+        {
+        System.out.println("Yes");
         }
+        else   {System.out.println("No");}
+
+        String a = com.sun.xml.internal.ws.util.StringUtils.capitalize(A);
+        String b = com.sun.xml.internal.ws.util.StringUtils.capitalize(B);
+
+
+        System.out.println(a+" "+b);
+    }
+
  }
